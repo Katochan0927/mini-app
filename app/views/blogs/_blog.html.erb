@@ -1,0 +1,21 @@
+<div class="content_post" style="background-color:#EDF7FF;">
+  <div class="more">
+  </div>
+  <span class="name">
+    <a href="">
+    <span>投稿者</span><%= blog.user.nickname %>
+  </a>
+    <div class="more_list">
+      <% if user_signed_in? && current_user.id == blog.user_id %>
+        <div class = list>
+          <%= link_to '削除', "/blogs/#{blog.id}", method: :delete %>
+        </div>
+        <div class = list>
+          <%= link_to '編集', "/blogs/#{blog.id}/edit", method: :get %>
+        </div>
+      <% end %>
+    </div>
+  </span>
+  <%= simple_format(blog.title) %>
+  <%= simple_format(blog.text) %>
+</div>

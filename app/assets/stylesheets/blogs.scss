@@ -1,0 +1,47 @@
+// Place all the styles related to the blogs controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+body,html {
+  height: 100%;
+}
+
+h1,h2,h3,h4,h5,h6,body {
+line-height: 1.57;
+  letter-spacing: 0.15em;
+  font-size: 16px;
+  font-family: 'Unica One', "Avenir", "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W6", "HIragino Kaku Gothic Pro W6", "HIragino Kaku Gothic Pro", Osaka, Meiryo, "メイリオ", "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;
+  margin: 0;
+}
+
+.row {
+  width: 800px;
+  height: 300px;
+}
+
+p {
+  font-size: 24px;
+  word-break: break-all;
+  text-align-last: center;
+  position: relative;
+}
+
+li.list {
+  float: right;
+  bottom: 0;
+}
+
+div.contnt_post {
+  background-color: darkseagreen;
+  min-height: 300px;
+}
+
+.more_list {
+  widows: 180px;
+}
+
+.name {
+  float: left;
+}

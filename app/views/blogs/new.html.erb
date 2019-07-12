@@ -1,0 +1,19 @@
+<div class="contents row">
+  <%= link_to "一覧にもどる", "/blogs" %>
+  <h1>投稿フォーム</h1>
+  <%= form_with(model: :blog, scope: :post, url: blogs_path, local: :false) do %>
+   <form class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+          <textarea id="title" class="materialize-textarea" name="title"></textarea>
+          <label for="title">Title</label>
+        </div>
+        <div class="input-field col s12">
+          <textarea id="text" class="materialize-textarea" name="text"></textarea>
+          <label for="text">Text</label>
+        </div>
+      <input type="submit" value="SENT">
+      </div>
+    </form>
+  <% end %>
+</div>
